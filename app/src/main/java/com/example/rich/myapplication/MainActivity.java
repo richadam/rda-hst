@@ -18,7 +18,6 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 
-import java.nio.charset.MalformedInputException;
 import java.util.Date;
 
 
@@ -45,10 +44,10 @@ public class MainActivity extends ActionBarActivity {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         WindowManager wm = (WindowManager) getApplicationContext().getSystemService(Context.WINDOW_SERVICE); // the results will be higher than using the activity context object or the getWindowManager() shortcut
         wm.getDefaultDisplay().getMetrics(displayMetrics);
-        int screenWidth = displayMetrics.widthPixels;
+//        int screenWidth = displayMetrics.widthPixels;
         int screenHeight = displayMetrics.heightPixels;
 //        screenHeight = 640;
-        System.out.println("height is: " + screenHeight);
+//        System.out.println("height is: " + screenHeight);
 
         NUM_ELEMENTS = screenHeight/(2 * 10 * 6);
         NUM_ELEMENTS = Math.min(NUM_ELEMENTS, 10);
