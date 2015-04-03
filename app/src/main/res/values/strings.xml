@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="hello_world">Put your name on the Wall of Fame!  80% of the proceeds go to the the National Multiple Sclerosis Society</string>
+    <string name="name1">Richard Adam</string>
+    <string name="action_settings">Settings</string>
+</resources>

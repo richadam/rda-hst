@@ -1,0 +1,306 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@android:color/holo_orange_light">
+
+    <TextView android:text="Put your name on the Wall of Fame!" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/hi_score_num1"
+        android:layout_alignEnd="@+id/hi_score_num1"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:gravity="center" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join the Wall of Fame  $0.99"
+        android:id="@+id/buy_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="94dp"
+        android:enabled="true"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="#ffd3ff0f" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/name1"
+        android:id="@+id/hi_score1"
+        android:layout_below="@+id/hi_score_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Linda Adam"
+        android:id="@+id/hi_score2"
+        android:layout_below="@+id/hi_score1"
+        android:layout_alignLeft="@+id/hi_score1"
+        android:layout_alignStart="@id/hi_score1"
+        android:layout_alignRight="@+id/hi_score_title"
+        android:layout_alignEnd="@+id/hi_score_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Teddy Roosevelt"
+        android:id="@+id/hi_score3"
+        android:layout_below="@+id/hi_score2"
+        android:layout_toStartOf="@id/hi_score1"
+        android:layout_alignParentStart="false"
+        android:layout_alignStart="@id/hi_score1"
+        android:layout_alignRight="@+id/hi_score2"
+        android:layout_alignEnd="@+id/hi_score2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Winston Churchill"
+        android:id="@+id/hi_score4"
+        android:layout_below="@+id/hi_score3"
+        android:layout_alignLeft="@+id/hi_score3"
+        android:layout_alignStart="@+id/hi_score3"
+        android:layout_alignRight="@+id/hi_score_title"
+        android:layout_alignEnd="@+id/hi_score_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Jane Crawley"
+        android:id="@+id/hi_score5"
+        android:layout_below="@+id/hi_score4"
+        android:layout_alignStart="@id/hi_score1"
+        android:layout_alignRight="@+id/hi_score_title"
+        android:layout_alignEnd="@+id/hi_score_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Donor Wall of Fame"
+        android:id="@+id/hi_score_title"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Name"
+        android:id="@+id/name_entry"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/hi_score5"
+        android:layout_alignEnd="@+id/hi_score5"
+        android:editable="false"
+        android:enabled="false"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:selectAllOnFocus="true"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="9999"
+        android:id="@+id/hi_score_num1"
+        android:layout_alignTop="@+id/hi_score1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="9900"
+        android:id="@+id/hi_score_num2"
+        android:layout_below="@+id/hi_score_num1"
+        android:layout_alignRight="@+id/hi_score_num1"
+        android:layout_alignEnd="@+id/hi_score_num1"
+        android:inputType="datetime" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="8888"
+        android:id="@+id/hi_score_num3"
+        android:layout_below="@+id/hi_score_num2"
+        android:layout_alignRight="@+id/hi_score_num2"
+        android:layout_alignEnd="@+id/hi_score_num2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="7777"
+        android:id="@+id/hi_score_num4"
+        android:layout_below="@+id/hi_score_num3"
+        android:layout_alignRight="@+id/hi_score_num3"
+        android:layout_alignEnd="@+id/hi_score_num3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="3333"
+        android:id="@+id/hi_score_num5"
+        android:layout_below="@+id/hi_score_num4"
+        android:layout_alignRight="@+id/hi_score_num4"
+        android:layout_alignEnd="@+id/hi_score_num4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/enter_name"
+        android:visibility="invisible"
+        android:selectAllOnFocus="true"
+        android:imeOptions="actionDone"
+        android:layout_above="@+id/name_entry"
+        android:layout_alignLeft="@+id/hi_score5"
+        android:layout_alignStart="@+id/hi_score5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/name_done_button"
+        android:layout_alignBottom="@+id/enter_name"
+        android:layout_alignRight="@+id/hi_score_num5"
+        android:layout_alignEnd="@+id/hi_score_num5"
+        android:visibility="invisible"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="#fffefffd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="80% of the proceeds go to the National Multiple Sclerosis Society."
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textAlignment="center"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Jane Crawley"
+        android:id="@+id/hi_score6"
+        android:layout_below="@+id/hi_score5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Jane Crawley"
+        android:id="@+id/hi_score7"
+        android:layout_below="@+id/hi_score6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Jane Crawley"
+        android:id="@+id/hi_score8"
+        android:layout_below="@+id/hi_score7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Jane Crawley"
+        android:id="@+id/hi_score9"
+        android:layout_below="@+id/hi_score8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Jane Crawley"
+        android:id="@+id/hi_score10"
+        android:layout_below="@+id/hi_score9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="3333"
+        android:id="@+id/hi_score_num6"
+        android:layout_below="@+id/hi_score_num5"
+        android:layout_alignRight="@+id/hi_score_num5"
+        android:layout_alignEnd="@+id/hi_score_num5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="3333"
+        android:id="@+id/hi_score_num7"
+        android:layout_below="@+id/hi_score_num6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="3333"
+        android:id="@+id/hi_score_num8"
+        android:layout_below="@+id/hi_score_num7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="3333"
+        android:id="@+id/hi_score_num9"
+        android:layout_below="@+id/hi_score_num8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="3333"
+        android:id="@+id/hi_score_num10"
+        android:layout_below="@+id/hi_score_num9"
+        android:layout_alignRight="@+id/hi_score_num9"
+        android:layout_alignEnd="@+id/hi_score_num9" />
+
+</RelativeLayout>
